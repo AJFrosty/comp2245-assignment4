@@ -18,6 +18,13 @@ h1 {
 }
 
 main {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 40px;
+}
+
+#controls {
+    grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,9 +43,57 @@ main {
     border: #9a259a;
 }
 
+#lookup-cities {
+    background-color: #a2c8c6;
+    color: #fff;
+    padding: 8px;
+    border: #a2c8c6;
+}
+
+#lookup-cities:hover {
+    background-color: #257d9a;
+    border: #257d9a;
+}
+
 #country {
     width: 450px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 8px;
     border-radius: 4px;
+}
+
+#result {
+    margin-top: 20px;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* USE OF RESEARCH BELOW TO DO ALTERNATING COLORS ON A TABLE: */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #c8a2c8;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
 }
